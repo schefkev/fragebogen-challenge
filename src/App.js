@@ -69,35 +69,37 @@ export default function App() {
   };
 
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <HomePage
-            iterations={iterations}
-            onIterationCreate={handleIterationCreate}
-          />
-        }
-      />
-      <Route
-        path="/questions"
-        element={
-          <QuestionsPage
-            questions={questions}
-            onComplete={handleIterationComplete}
-          />
-        }
-      />
-      <Route
-        path="/iterations/:id"
-        element={
-          <IterationAnswers iterations={iterations} questions={questions} />
-        }
-      />
-      <Route
-        path="/iterations/view"
-        element={<IterationsOverview iterations={iterations} />}
-      />
-    </Routes>
+    <div className="bg-blue-100 min-h-screen">
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <HomePage
+              iterations={iterations}
+              onIterationCreate={handleIterationCreate}
+            />
+          }
+        />
+        <Route
+          path="/questions"
+          element={
+            <QuestionsPage
+              questions={questions}
+              onComplete={handleIterationComplete}
+            />
+          }
+        />
+        <Route
+          path="/iterations/:id"
+          element={
+            <IterationAnswers iterations={iterations} questions={questions} />
+          }
+        />
+        <Route
+          path="/iterations/view"
+          element={<IterationsOverview iterations={iterations} />}
+        />
+      </Routes>
+    </div>
   );
 }
