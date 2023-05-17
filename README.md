@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Fragebogen-Webapp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Diese Webapp ermöglicht es Benutzern, Fragebögen zu erstellen und auszufüllen. Die Webapp wurde mit React, JavaScript und localStorage entwickelt.
 
-## Available Scripts
+## Installation und Verwendung
 
-In the project directory, you can run:
+1. Clone das Repository:
 
-### `npm start`
+```
+git clone https://github.com/schefkev/fragebogen-challenge.git
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Installiere die Abhängigkeiten:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Navigiere im Terminal zum Verzeichnis `fragebogen-challenge` und führe den folgenden Befehl aus, um die Abhängigkeiten zu installieren:
 
-### `npm test`
+```
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Starte die Anwendung:
 
-### `npm run build`
+Führe den folgenden Befehl aus, um die Anwendung zu starten:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Öffne deinen bevorzugten Webbrowser und navigiere zur folgenden URL:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+http://localhost:3000/
+```
 
-### `npm run eject`
+Dort solltest du die Fragebogen-Webapp sehen und benutzen können. Wenn du Änderungen an der Anwendung vornimmst, wird die Anwendung automatisch neu geladen, wenn du die Dateien speicherst, so dass du die Änderungen sofort sehen kannst. Um die Anwendung zu beenden, drücke `CTRL + C` im Terminal.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Funktionalitäten
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Die Webapp bietet die folgenden Funktionen:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Erstellen eines neuen Fragebogens
+- Hinzufügen von Fragen und Antworten zu einem Fragebogen
+- Ausfüllen eines Fragebogens und Speichern der Antworten in localStorage
+- Anzeigen der gespeicherten Antworten für einen Fragebogen
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Entwicklerinformationen
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Die Fragebogen-Webapp wurde mit React, JavaScript und localStorage entwickelt. Die Daten werden in localStorage gespeichert, so dass sie beim Neustart der Anwendung nicht verloren gehen.
