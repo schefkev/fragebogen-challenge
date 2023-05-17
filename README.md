@@ -34,6 +34,20 @@ http://localhost:3000/
 
 Dort solltest du die Fragebogen-Webapp sehen und benutzen können. Wenn du Änderungen an der Anwendung vornimmst, wird die Anwendung automatisch neu geladen, wenn du die Dateien speicherst, so dass du die Änderungen sofort sehen kannst. Um die Anwendung zu beenden, drücke `CTRL + C` im Terminal.
 
+## Test
+
+Dieses Projekt enthält Tests mit Jest für die `HomePage` - und `QuestionsPage`- Komponenten. Die Tests überprüfen, ob die Komponenten korrekt gerendert werden und ob die Interaktionen mit den Benutzern funktioniert.
+
+Um die Tests auszuführen, führe die folgenden Schritte aus:
+
+1. Führe den folgenden Befehl aus:
+
+```
+npm test
+```
+
+2. Im Terminal kannst du dann sehen ob der Test bestanden oder nicht bestanden wurde.
+
 ## Funktionalitäten
 
 Die Webapp bietet die folgenden Funktionen:
