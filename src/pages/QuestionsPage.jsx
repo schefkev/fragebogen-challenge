@@ -49,8 +49,11 @@ export default function QuestionsPage({ questions, onComplete }) {
 
       const iterationsCopy = [...iterations];
       const currentIteration = iterationsCopy[iterationsCopy.length - 1];
-      currentIteration.answers = iterationAnswers;
-      currentIteration.completed = true;
+
+      if (currentIteration) {
+        currentIteration.answers = iterationAnswers;
+        currentIteration.completed = true;
+      }
 
       setIterations(iterationsCopy);
       localStorage.setItem('iterations', JSON.stringify(iterationsCopy));
